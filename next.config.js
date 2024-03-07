@@ -1,23 +1,6 @@
-const nextConfig = {
-  output: 'export',
-  images: {
-    unoptimized: true,
-  },
- 
-  // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
-  // trailingSlash: true,
- 
-  // Optional: Prevent automatic `/me` -> `/me/`, instead preserve `href`
-  // skipTrailingSlashRedirect: true,
- 
-  // Optional: Change the output directory `out` -> `dist`
-  // distDir: 'dist',
-}
+const withMarkdoc = require('@markdoc/next.js');
 
-const withNextra = require('nextra')({
-  theme: 'nextra-theme-docs',
-  themeConfig: './theme.config.tsx',
-})
-
-module.exports = withNextra();
-module.exports = nextConfig;
+module.exports =
+  withMarkdoc(/* config: https://markdoc.io/docs/nextjs#options */)({
+    pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'md', 'mdoc'],
+  });
