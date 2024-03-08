@@ -1,0 +1,19 @@
+{
+  "name": "madhusudanabburu.github.io",
+  "version": "0.0.1",
+  "description": "Documentation",
+  "main": "index.js",
+  "authors": {
+    "name": "Madhusudan R Abburu",
+    "email": "madhusudan.abburu@gmail.com"
+  },
+  "repository": "https://github.com/madhusudanabburu/madhusudanabburu.github.io/madhusudanabburu.github.io",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
