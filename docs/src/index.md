@@ -11,5 +11,5 @@ features:
   details: Detailed setup steps for Kubeflow and configuration
 - title: First Machine Learning Pipeline
   details: Setting up our very first ML Pipeline on Kubeflow
-footer: Made by Madhusudan R Abburu with ❤️
+footer: 
 ---

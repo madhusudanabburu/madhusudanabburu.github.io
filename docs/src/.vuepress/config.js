@@ -37,6 +37,10 @@ module.exports = {
         text: 'Guide',
         link: '/guide/',
       },
+      {
+        text: 'Home',
+        link: '/',
+      },
     ],
     sidebar: {
       '/guide/': [
@@ -45,7 +49,7 @@ module.exports = {
           collapsable: false,
           children: [
             '',
-            'using-vue',
+            'kubeflow',
           ]
         }
       ],
