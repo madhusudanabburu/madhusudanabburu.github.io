@@ -109,7 +109,7 @@ while ! kustomize build example | kubectl apply -f -; do echo "Retrying to apply
 
 The above command should run for sometime to complete setting up the kubeflow components.  
 
-At the end, all the kubeflow pods should be up and runnings as shown below
+At the end, all the kubeflow pods should be up and running as shown below
 
 ![Image from images folder](~@source/images/kubeflow/Kubeflow_pods_running.png)
 
