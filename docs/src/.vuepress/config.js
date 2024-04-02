@@ -42,18 +42,26 @@ module.exports = {
         link: '/',
       },
     ],
-    sidebar: {
-      '/guide/': [
-        {
-          title: 'Guide',
-          collapsable: false,
-          children: [
-            '',
-            'kubeflow',
-          ]
-        }
-      ],
-    }
+    sidebar: [
+      {
+        title: 'Prerequisites',
+        path: '/guide/',
+        collapsable: false,
+        children: [
+          '/guide/',
+          '/guide/kubeflow'
+        ]
+      },
+      {
+        title: 'Notebooks',
+        path: '/guide/notebooks/',
+        collapsable: false,
+        children: [
+          '/guide/notebooks/',
+          '/guide/notebooks/twitter'
+        ]      
+      }
+    ]
   },
 
   /**
@@ -62,5 +70,12 @@ module.exports = {
   plugins: [
     '@vuepress/plugin-back-to-top',
     '@vuepress/plugin-medium-zoom',
+    'vuepress-plugin-contact-us', 
+    {
+        /**
+         * Mandatory: the email address which the contact data will be sent
+         */
+        email: 'madhusudan.abburu@gmail.com',
+    },
   ]
 }

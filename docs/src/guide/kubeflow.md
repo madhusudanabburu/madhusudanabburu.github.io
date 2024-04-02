@@ -5,9 +5,10 @@ Kubeflow needs the following tools to be installed in the system before the setu
 
 * Docker
 * Kubernetes
-* Kustomize
+* [Kustomize](https://kubectl.docs.kubernetes.io/installation/kustomize/)
+* [Kind](https://kind.sigs.k8s.io/)
 
-Since we have already installed Docker Desktop and also enabled Kubernetes in our previous step, we should continue installing Kustomize to proceed with the setup of Kubeflow
+Since we have already installed Docker Desktop and also enabled Kubernetes in our previous step, we should continue installing Kustomize and Kind to proceed with the setup of Kubeflow
 
 ## Installation
 
