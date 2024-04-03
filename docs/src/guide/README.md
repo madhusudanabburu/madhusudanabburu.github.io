@@ -18,6 +18,7 @@ You should be able to see the progress of the installation as shown below
 
 ### Step 3
 Next, try to open the executable and there may be prompts as below depending on the security configuration of the laptop to get approval from the user to continue opening the Docker application
+
 ![Image from images folder](~@source/images/docker/Docker_Approve.png)
 
 ### Step 4
