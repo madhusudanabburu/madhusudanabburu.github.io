@@ -1661,7 +1661,7 @@ plt.show()
 * We can see that Glucose concentration is the most important feature followed by Age and BMI.
 * The tuned decision tree is using only three variables to separate the two classes. 
 
-## Conclusion
+## Observations
 * We can see that three variables - Glucose, Age, and BMI are the most important factors in identifying persons who are at risk of diabetes. Other variables' importance is not significant. 
 * Once the desired performance is achieved from the model, the company can use it to predict the risk factor of diabetes in new patients. This would help to reduce the cost and increase the efficiency of the process.
 * Identifying the risk of diabetes at early stages, especially among pregnant women, can help to control the disease and prevent the second health problem.
