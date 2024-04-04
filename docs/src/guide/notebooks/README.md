@@ -1,7 +1,7 @@
 # Diabetes Risk Prediction
 
 ## Launch a Jupyter Notebook
-Let's launch a Jupyter notebook as shown below and also ensure that we have sufficient CPU cores to run some of the algorithms like RandomForestClassifier. I had to increase the minimum CPU count to 4 and maximum count to 8. Also the memory for this pod had to be increased from minimum 2Gi to maximum 4Gi
+Let's launch a Jupyter notebook **diabetesmgmt** as shown below and also ensure that we have sufficient CPU cores to run some of the algorithms like RandomForestClassifier. I had to increase the minimum CPU count to 4 and maximum count to 8. Also the memory for this pod had to be increased from minimum 2Gi to maximum 4Gi
 
 ![Image from images folder](~@source/images/notebooks/kubeflow_diabetes_notebook.png)
 
