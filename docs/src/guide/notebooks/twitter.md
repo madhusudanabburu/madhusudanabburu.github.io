@@ -1257,7 +1257,11 @@ bar_plot(data,'airline_sentiment')
 
     
 ![png](./twitter_img/output_52_0.png)
-    
+
+As shown above, following are the airline sentiment codes
+* 0 = Neutral
+* 1 = Positive
+* 2 = Negative
 
 
 ## Data Preprocessing
