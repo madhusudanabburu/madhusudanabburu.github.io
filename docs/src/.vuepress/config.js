@@ -58,7 +58,8 @@ module.exports = {
         collapsable: false,
         children: [
           '/guide/notebooks/',
-          '/guide/notebooks/twitter'
+          '/guide/notebooks/twitter',
+          '/guide/notebooks/covid'
         ]      
       }
     ]
