@@ -10,7 +10,7 @@ Once the notebook pod comes up, please click on the CONNECT link to launch a new
 ![Image from images folder](~@source/images/notebooks/kubeflow_covid_nb_open.png)
 
 ::: tip
-I had some issues launching **tensorflow** based pods as the version that was specified in the following spawner_ui_config.yaml was v1.8.0-rc.0 and it was not available for arm64 architecture so I had to update it to v1.8.0 for the following docker images
+I had some issues launching **tensorflow** based pods as the version that was specified in the **spawner_ui_config.yaml** was **v1.8.0-rc.0** and it was not available for arm64 architecture so I had to update it to **v1.8.0** for the following docker images
 
 ```
 apps/jupyter/jupyter-web-app/upstream/base/configs/spawner_ui_config.yaml
