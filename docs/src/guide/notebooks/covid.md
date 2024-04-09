@@ -23,6 +23,12 @@ Once the version of the images is updated, relaunch the jupyter-web-app pod agai
 ```
 kustomize build apps/jupyter/jupyter-web-app/upstream/overlays/istio | kubectl apply -f -
 ```
+
+If there are issues, please restart the entire kubeflow namespace using the below command
+```
+kubectl -n kubeflow rollout restart deploy
+```
+
 :::
 
 **`Now, let's look at the actual problem at hand to see if it runs on our localhost`**
@@ -79,7 +85,7 @@ from tensorflow.keras import losses, optimizers
 
 ## Data Description
 
-### Now List the contents of the drive and see the complete path of the data file to read
+### List the data files to read
 
 
 ```python

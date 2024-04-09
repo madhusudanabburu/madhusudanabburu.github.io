@@ -61,6 +61,14 @@ module.exports = {
           '/guide/notebooks/twitter',
           '/guide/notebooks/covid'
         ]      
+      },
+      {
+        title: 'Pipelines',
+        path: '/guide/pipelines/',
+        collapsable: false,
+        children: [
+          '/guide/pipelines/'
+        ]
       }
     ]
   },
