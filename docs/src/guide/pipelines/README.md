@@ -110,7 +110,7 @@ kubectl -n kubeflow-user-example-com rollout restart deploy
 :::
 
 ## Observations
-Although this is a very basic pipeline, it still demonstrates that there are several factors to consider before converting a Jupyter Notebook into a Pipeline as there is some thought process needed on the design/identification of components that need to be independent and tracked like Data Ingestion, Data Cleansing, Data Analysis, Data splitting, Train models, Store Models, Validate models etc
+Although this is a very basic pipeline, it still demonstrates that there are several factors to consider before converting a Jupyter Notebook into a Pipeline as there is some thought process needed on the design/identification of components that need to be independent and tracked like Data Ingestion, Data Cleansing, Data Analysis, Data splitting, Train models, Store Models, Validate and Test models etc
 
 
 
