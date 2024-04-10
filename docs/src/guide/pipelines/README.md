@@ -5,7 +5,7 @@ Let's start by developing a Hello World Pipeline that just executes a single tas
 ## Prerequistes
 Let's install the prerequisites for compiling the pipelines on our laptop.
 * kfp
-* dsl-compile
+* kfp dsl 
 
 ```
 pip install kfp
@@ -48,7 +48,7 @@ if __name__ == '__main__':
 
 ```
 
-Let's save the above file into a .py file and use the **kfp dsl compile** command to create a zip format to upload it to the Kubeflow Dashboard 
+Let's save the above file into a .py file and use the **kfp dsl compile** command to create a yaml format to upload it to the Kubeflow Dashboard 
 
 ## Pipeline compilation 
 
