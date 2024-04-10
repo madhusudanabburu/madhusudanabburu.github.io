@@ -3,14 +3,14 @@
 Let's start by developing a Hello World Pipeline that just executes a single task and prints 'Hello World'
 
 ## Prerequistes
-Let's install the prerequisites for compiling the pipelines on our laptop.
+Let's install the prerequisites **Kubeflow Pipeline SDK (kfp)** for compiling the pipelines on our laptop
 * kfp
-* kfp dsl 
+
 
 ```
 pip install kfp
 ```
-Executing the above command should install the kubeflow pipelines on the laptop and also the tool to compile pipeline code into a yaml/zip/.tar.gz formats as needed
+Executing the above command should install the kubeflow pipelines SDK on the laptop and also the tool to compile pipeline code into a yaml/zip/.tar.gz formats as needed
 
 ```
 kfp dsl
@@ -68,11 +68,11 @@ Let's go to the Kubeflow dashboard on our localhost and try to click on the **Pi
 
 ![Image from images folder](~@source/images/pipelines/kfp_yaml_upload.png)
 
-Uploading the yaml file should show a graph view of the pipeline as shown below
+Uploading the yaml file should show a graph view of the pipeline with its tasks as shown below
 
 ![Image from images folder](~@source/images/pipelines/kfp_pipeline_graph.png)
 
-There is only one method in this pipeline which outputs **Hello world** so let's try creating a run in the next step
+There is only one method/task in this pipeline which outputs **Hello world** so let's try creating a run in the next step
 
 ## Run the Pipeline
 
@@ -82,11 +82,11 @@ Click on **Create Run** shown on the top right of the Dashboard to create a run 
 
 Let's click on **Start** at the bottom of the screen and see what happens
 
-I didn't see any outputs on the Dashboard as shown below but did see some outputs in the Pod logs (shown in the second screenshot below)
+I didn't see any outputs on the Dashboard except the status of the Pipeline as 'Complete' as shown below but did see some messages in the Pod logs (shown in the second screenshot below)
 
 ![Image from images folder](~@source/images/pipelines/kfp_hw_dashboard_output.png)
 
-The pod that ran the pipeline did output the **Hello world** text as shown below
+The pod that ran the pipeline did output the **Hello world** text as shown below - It makes sense as pipelines are intended to run background operations.
 
 ![Image from images folder](~@source/images/pipelines/kfp_hw_pod_output.png)
 
@@ -97,10 +97,20 @@ Please visit the **Experiments (KFP)** link on the left navigation bar and creat
 
 ![Image from images folder](~@source/images/pipelines/kfp_new_exp.png)
 
+Also, if you notice any issues with login to Kubeflow Dashboard due to errors in the cluster like JWKS key missing / invalid headers etc, please do a rolling restart of the pods with the below commands - It works for me !
+
+```
+kubectl -n knative-serving rollout restart deploy
+kubectl -n istio-system rollout restart deploy
+kubectl -n kubeflow rollout restart deploy
+kubectl -n kubeflow-user-example-com rollout restart deploy
+```
+
+
 :::
 
 ## Observations
-Although this is a very basic pipeline, it still demonstrates that there are several factors to consider before converting a Jupyter Notebook into a Pipeline as there is some thought process needed on the design/identification of components that need to be independent
+Although this is a very basic pipeline, it still demonstrates that there are several factors to consider before converting a Jupyter Notebook into a Pipeline as there is some thought process needed on the design/identification of components that need to be independent and tracked like Data Ingestion, Data Cleansing, Data Analysis, Data splitting, Train models, Store Models, Validate models etc
 
 
 
