@@ -114,7 +114,7 @@ Although this is a very basic pipeline, it still demonstrates that there are sev
 
 I came across a tool called [Kale](https://github.com/kubeflow-kale/kale) that seamlessly integrates with Jupyter Notebook as an extension and automatically converts the notebook code to pipeline but unfortunately I couldn't install it due to the Jupyter Notebook version not being supported, I had to downgrade the version and also rebuild the docker images for Jupyter Notebook to only support versions between 2.0.0 and 3.0.0 
 
-Let me find an easier way to convert a Jupyter Notebook to Pipeline with minimal effort
+Let me find a mechanism to convert a Jupyter Notebook to Pipeline with minimal effort
 
 
 
