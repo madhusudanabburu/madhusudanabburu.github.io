@@ -97,7 +97,7 @@ Please visit the **Experiments (KFP)** link on the left navigation bar and creat
 
 ![Image from images folder](~@source/images/pipelines/kfp_new_exp.png)
 
-Also, if you notice any issues with login to Kubeflow Dashboard due to errors in the cluster like JWKS key missing / invalid headers etc, please do a rolling restart of the pods with the below commands - It works for me !
+Also, if you notice any issues with login to Kubeflow Dashboard due to errors in the cluster like JWKS key missing / invalid headers/OPENSSL_internal:CERTIFICATE_VERIFY_FAILED etc, please do a rolling restart of the pods with the below commands - It works for me !
 
 ```
 kubectl -n knative-serving rollout restart deploy
@@ -111,6 +111,10 @@ kubectl -n kubeflow-user-example-com rollout restart deploy
 
 ## Observations
 Although this is a very basic pipeline, it still demonstrates that there are several factors to consider before converting a Jupyter Notebook into a Pipeline as there is some thought process needed on the design/identification of components that need to be independent and tracked like Data Ingestion, Data Cleansing, Data Analysis, Data splitting, Train models, Store Models, Validate and Test models etc
+
+I came across a tool called [Kale](https://github.com/kubeflow-kale/kale) that seamlessly integrates with Jupyter Notebook as an extension and automatically converts the notebook code to pipeline but unfortunately I couldn't install it due to the Jupyter Notebook version not being supported, I had to downgrade the version and also rebuild the docker images for Jupyter Notebook to only support versions between 2.0.0 and 3.0.0 
+
+Let me find an easier way to convert a Jupyter Notebook to Pipeline with minimal effort
 
 
 
