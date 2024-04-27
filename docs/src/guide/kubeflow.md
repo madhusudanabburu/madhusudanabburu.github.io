@@ -1,4 +1,4 @@
-# Kubeflow for Mac
+# Kubeflow
 
 ## Prerequisites
 Kubeflow needs the following tools to be installed in the system before the setup 

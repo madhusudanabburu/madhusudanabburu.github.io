@@ -5,7 +5,7 @@ tagline:
 actionText: Quick Start →
 actionLink: /guide/
 features:
-- title: Docker for Desktop on Mac 
+- title: Docker Desktop 
   details: Detailed steps on setting up Docker with Kubernetes on Macbook Pro
 - title: Kubeflow Setup and Configuration
   details: Detailed setup steps for Kubeflow and configuration

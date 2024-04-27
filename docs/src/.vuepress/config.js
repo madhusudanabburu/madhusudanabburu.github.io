@@ -67,7 +67,8 @@ module.exports = {
         path: '/guide/pipelines/',
         collapsable: false,
         children: [
-          '/guide/pipelines/'
+          '/guide/pipelines/',
+          '/guide/pipelines/twitter_supervised'
         ]
       }
     ]

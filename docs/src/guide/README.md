@@ -1,4 +1,4 @@
-# Docker Desktop for Mac
+# Docker Desktop
 
 Download the Docker Desktop for Mac with either the Apple silicon / Intel chip versions and follow the instructions to install the software on your machine
 
