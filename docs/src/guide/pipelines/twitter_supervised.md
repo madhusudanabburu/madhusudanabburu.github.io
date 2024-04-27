@@ -115,7 +115,7 @@ Let's click on Start at the bottom of the screen and see what happens (this pipe
 
 ![Image from images folder](~@source/images/pipelines/twitter/kfp_twitter_pipeline_output.png)
 
-As you can see from the above image, our pipeline has run successfully and also has print the output that says TF-IDF model has a better accuracy score compared to the Bag of Words model. This model can be persisted using [pickle](https://docs.python.org/3/library/pickle.html) or [joblib](https://joblib.readthedocs.io/en/stable/) libraries
+As you can see from the above image, our pipeline has run successfully and also has print the output that says TF-IDF model has a better accuracy score compared to the Bag of Words model though the difference is very minimal. This model can be persisted using [pickle](https://docs.python.org/3/library/pickle.html) or [joblib](https://joblib.readthedocs.io/en/stable/) libraries so it can be used for predictions 
 
 ## Observations
 
