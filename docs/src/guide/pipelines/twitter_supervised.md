@@ -117,6 +117,45 @@ Let's click on Start at the bottom of the screen and see what happens (this pipe
 
 As you can see from the above image, our pipeline has run successfully and also has print the output that says TF-IDF model has a better accuracy score compared to the Bag of Words model though the difference is very minimal. This model can be persisted using [pickle](https://docs.python.org/3/library/pickle.html) or [joblib](https://joblib.readthedocs.io/en/stable/) libraries so it can be used for predictions 
 
+## Continuous Deployments
+
+Once the pipeline is ready, we must ensure that the models are not overwritten and also provide the ability to push changes to the model's fine tuning parameters in a clean manner to ensure that a baseline is used to compare before commiting the final model for validation. A Github Action based continuous deployment process would greatly help in automating this step
+
+Here is a link to a github action that greatly assists in submitting kubeflow pipelines to the Kubeflow cluster 
+
+Excerpt taken from [here](https://github.com/marketplace/actions/kubeflow-compile-deploy-and-run) - It seems to be built for GCP
+
+```
+name: Compile, Deploy and Run on Kubeflow
+on: [push]
+
+# Set environmental variables
+
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    steps:
+    - name: checkout files in repo
+      uses: actions/checkout@master
+
+
+    - name: Submit Kubeflow pipeline
+      id: kubeflow
+      uses: NikeNano/kubeflow-github-action@master
+      with:
+        KUBEFLOW_URL: ${{ secrets.KUBEFLOW_URL }}
+        ENCODED_GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.GKE_KEY }}
+        GOOGLE_APPLICATION_CREDENTIALS: /tmp/gcloud-sa.json
+        CLIENT_ID: ${{ secrets.CLIENT_ID }}
+        PIPELINE_CODE_PATH: "example_pipeline.py"
+        PIPELINE_FUNCTION_NAME: "flipcoin_pipeline"
+        PIPELINE_PARAMETERS_PATH: "parameters.yaml"
+        EXPERIMENT_NAME: "Default"
+        RUN_PIPELINE: True
+        VERSION_GITHUB_SHA: False
+
+```
+
 ## Observations
 
 This is a pipeline that does every functionality like Data ingestion, cleansing, analysis, training and validating the models. One important consideration is the data is shared between components using volume (or shared folders) as shown in the above image using folder icons. A better option would be to use a database instead of having them as files to ensure that other pipelines can also use the data as needed

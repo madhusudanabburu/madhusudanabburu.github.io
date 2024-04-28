@@ -79,13 +79,6 @@ module.exports = {
    */
   plugins: [
     '@vuepress/plugin-back-to-top',
-    '@vuepress/plugin-medium-zoom',
-    'vuepress-plugin-contact-us', 
-    {
-        /**
-         * Mandatory: the email address which the contact data will be sent
-         */
-        email: 'madhusudan.abburu@gmail.com',
-    },
+    '@vuepress/plugin-medium-zoom'
   ]
 }
