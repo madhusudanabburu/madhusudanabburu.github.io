@@ -86,11 +86,10 @@ module.exports = {
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
    */
   plugins: [
-    '@vuepress/plugin-back-to-top',
-    '@vuepress/plugin-medium-zoom',
-    '@vuepress/plugin-google-analytics',
+    ['@vuepress/plugin-google-analytics',
       {
-        'ga': 'G-GNZH16V1S9' // Measurement ID
+        ga: 'G-GNZH16V1S9' // Measurement ID
       }
+    ]
   ]
 }
