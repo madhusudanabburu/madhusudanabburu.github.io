@@ -6,6 +6,8 @@ After trying the initial [Hello World Pipeline](./README.md), I came across a to
 
 There was another tool called [Fairing](https://github.com/kubeflow/fairing) that looks promising to productionize the Jupyter Notebook files by making them run on Kubeflow as pipelines made up of individual components that can scale as needed
 
+I prefer less tools in my ecosystem for complexity reasons so deferred the [Fairing](https://github.com/kubeflow/fairing) approach and explored on rewriting the Jupyter Notebook into modularized components
+
 ## Prerequisites
 
 The prerequisites are still the same, we need the [kfp](https://pypi.org/project/kfp/) module to be present for compiling the python source into .yaml file for uploading to the Kubeflow cluster

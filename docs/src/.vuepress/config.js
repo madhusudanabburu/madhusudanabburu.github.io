@@ -70,6 +70,14 @@ module.exports = {
           '/guide/pipelines/',
           '/guide/pipelines/twitter_supervised'
         ]
+      },
+      {
+        title: 'Model Deployment',
+        path: '/guide/vertexai/',
+        collapsable: false,
+        children: [
+          '/guide/vertexai/'
+        ]
       }
     ]
   },
@@ -79,6 +87,10 @@ module.exports = {
    */
   plugins: [
     '@vuepress/plugin-back-to-top',
-    '@vuepress/plugin-medium-zoom'
+    '@vuepress/plugin-medium-zoom',
+    '@vuepress/google-analytics',
+      {
+        'ga': 'G-GNZH16V1S9' // Measurement ID
+      }
   ]
 }
