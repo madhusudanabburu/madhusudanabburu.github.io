@@ -88,7 +88,7 @@ module.exports = {
   plugins: [
     '@vuepress/plugin-back-to-top',
     '@vuepress/plugin-medium-zoom',
-    '@vuepress/google-analytics',
+    '@vuepress/plugin-google-analytics',
       {
         'ga': 'G-GNZH16V1S9' // Measurement ID
       }
