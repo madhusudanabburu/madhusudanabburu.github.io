@@ -34,7 +34,7 @@ module.exports = {
     lastUpdated: false,
     nav: [
       {
-        text: 'Guide',
+        text: 'ML Guide',
         link: '/guide/',
       },
       {
@@ -63,7 +63,7 @@ module.exports = {
         ]      
       },
       {
-        title: 'Pipelines',
+        title: 'Kubeflow Pipelines',
         path: '/guide/pipelines/',
         collapsable: false,
         children: [
