@@ -17,6 +17,6 @@
     "vuepress": "^1.5.3"
   },
   "dependencies": {
-    "vuepress-plugin-contact-us": "^1.0.3"
+    "@vuepress/plugin-google-analytics": "^1.9.10"
   }
 }
