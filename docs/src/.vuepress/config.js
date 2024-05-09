@@ -91,5 +91,22 @@ module.exports = {
         ga: 'G-GNZH16V1S9' // Measurement ID
       }
     ]
-  ]
+  ],
+
+  head: [
+    [
+        'script',
+        {
+            async: true,
+            src: 'https://www.googletagmanager.com/gtag/js?id=G-GNZH16V1S9',
+        },
+    ],
+    [
+        'script',
+        {},
+        [
+            "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-GNZH16V1S9');",
+        ],
+    ],
+],
 }
