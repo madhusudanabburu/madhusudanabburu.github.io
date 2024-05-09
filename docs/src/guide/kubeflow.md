@@ -131,9 +131,7 @@ I did end up with several pods unable to run due to missing images for the Apple
 
 ::: tip
 
-Update the tags from v1.8.0-rc.0 to v1.8.0 for the following images 
-
-Please go into the app and common folders and update the <b>kustomization.yaml</b> file to update the tags 
+Please go into the app and common folders and update the <b>kustomization.yaml</b> file to update the tags from v1.8.0-rc.0 to v1.8.0 for the following images 
 
 * kubeflownotebookswg/centraldashboard
 * kubeflownotebookswg/poddefaults-webhook
@@ -147,7 +145,7 @@ Please go into the app and common folders and update the <b>kustomization.yaml</
 * kubeflownotebookswg/volumes-web-app
 * kserve/models-web-app
 
-For the kserve/models-web-app, clone the public repository <https://github.com/kserve/models-web-app.git> and build the docker image with the below commands
+For the kserve/models-web-app, clone the public repository <https://github.com/kserve/models-web-app.git> and build the docker image with the below commands (this step ensures that the image is built on your laptop for the apple silicon architecture)
 
 ```
 docker build -t <any org>/models-web-app:v1.0.0 .
@@ -155,7 +153,7 @@ docker build -t <any org>/models-web-app:v1.0.0 .
 docker push <any org>/models-web-app:v1.0.0
 
 ```
-Also update the following files in the Kubeflow manifest's repository to reflect the new image 
+Once the docker image for models-web-app is built and uploaded to your org, the next step is to update the following files in the Kubeflow manifest's repository to reflect the new image 
 
 * contrib/kserve/models-web-app/base/deployment.yaml
 * contrib/kserve/models-web-app/base/kustomization.yaml
