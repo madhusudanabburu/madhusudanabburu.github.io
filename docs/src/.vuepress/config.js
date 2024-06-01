@@ -49,7 +49,8 @@ module.exports = {
         collapsable: false,
         children: [
           '/guide/',
-          '/guide/kubeflow'
+          '/guide/kubeflow',
+          '/guide/minio'
         ]
       },
       {

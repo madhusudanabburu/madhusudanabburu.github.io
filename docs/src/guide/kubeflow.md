@@ -158,6 +158,12 @@ Once the docker image for models-web-app is built and uploaded to your org, the 
 * contrib/kserve/models-web-app/base/deployment.yaml
 * contrib/kserve/models-web-app/base/kustomization.yaml
 
+Redeploy the models-web-app using the below command
+
+```
+kustomize build contrib/kserve/models-web-app/overlays/kubeflow | kubectl apply -f -
+```
+
 Below are some handy commands to look at the pods and inspect the errors for corrective actions
 
 ```

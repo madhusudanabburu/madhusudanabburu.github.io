@@ -22,7 +22,7 @@ pip install kfp-kubernetes
 
 ## Pipeline Source
 
-I had to come up with a modular version of the [Twitter Sentiment Analysis](../notebooks/twitter.md) as shown below to represent some of the functions as components. One of the most important things to consider is to design our notebook into multiple functions that can later become components on Kubeflow cluster and also minimizing the effort to productionize a notebook
+I had to come up with a modular version of the [Twitter Sentiment Analysis](../notebooks/twitter.md) as shown below to represent some of the functions as components. One of the most important things to consider is to design our notebook into multiple functions that can later become components on Kubeflow cluster thereby minimizing the effort to productionize a notebook
 
 ### Read CSV
 
