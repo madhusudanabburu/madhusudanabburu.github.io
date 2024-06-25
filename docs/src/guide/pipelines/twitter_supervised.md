@@ -6,7 +6,7 @@ After trying the initial [Hello World Pipeline](./README.md), I came across a to
 
 There was another tool called [Fairing](https://github.com/kubeflow/fairing) that looks promising to productionize the Jupyter Notebook files by making them run on Kubeflow as pipelines made up of individual components that can scale as needed
 
-I prefer less tools in my ecosystem for complexity reasons so deferred the [Fairing](https://github.com/kubeflow/fairing) approach and explored on rewriting the Jupyter Notebook into modularized components
+I prefer minimal tools in my ecosystem for complexity reasons so deferred the [Fairing](https://github.com/kubeflow/fairing) approach and explored on rewriting the Jupyter Notebook into modularized components
 
 ## Prerequisites
 
@@ -23,6 +23,8 @@ pip install kfp-kubernetes
 ## Pipeline Source
 
 I had to come up with a modular version of the [Twitter Sentiment Analysis](../notebooks/twitter.md) as shown below to represent some of the functions as components. One of the most important things to consider is to design our notebook into multiple functions that can later become components on Kubeflow cluster thereby minimizing the effort to productionize a notebook
+
+Please find the sources [here](https://github.com/madhusudanabburu/pgp-aiml/blob/master/NLP%20-%20Twitter%20US%20Airline%20Sentiment%20Analysis/twitter_nlp_supervised.py)
 
 ### Read CSV
 

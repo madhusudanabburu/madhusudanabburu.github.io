@@ -1,6 +1,8 @@
 # MinIO
 [MinIO](https://min.io/) is a Kubernetes native high performance object store with an S3 compatible API. It supports deploying MinIO tenants onto private and public cloud infrastructures
 
+This is optional if Kubeflow is setup locally as the volumes available via the Kubeflow Dashboard should help in providing the required storage 
+
 ## Prerequisites
 
 Following are the prerequisites for setting up MinIO

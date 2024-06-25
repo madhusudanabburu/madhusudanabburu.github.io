@@ -1,4 +1,4 @@
-# Hello World Pipeline
+# Hello World
 
 Let's start by developing a Hello World Pipeline that just executes a single task and prints 'Hello World'
 

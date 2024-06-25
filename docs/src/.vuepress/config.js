@@ -54,7 +54,7 @@ module.exports = {
         ]
       },
       {
-        title: 'Notebooks',
+        title: 'Jupyter Notebooks',
         path: '/guide/notebooks/',
         collapsable: false,
         children: [
@@ -69,7 +69,8 @@ module.exports = {
         collapsable: false,
         children: [
           '/guide/pipelines/',
-          '/guide/pipelines/twitter_supervised'
+          '/guide/pipelines/twitter_supervised',
+          '/guide/pipelines/covid'
         ]
       },
       {
