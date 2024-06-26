@@ -48,17 +48,17 @@ module.exports = {
         path: '/guide/',
         collapsable: false,
         children: [
-          '/guide/intro'
+          '/guide/'
         ]
       },
       {
         title: 'Prerequisites',
-        path: '/guide/',
+        path: '/guide/prerequisites/',
         collapsable: false,
         children: [
-          '/guide/',
-          '/guide/kubeflow',
-          '/guide/minio'
+          '/guide/prerequisites/',
+          '/guide/prerequisites/kubeflow',
+          '/guide/prerequisites/minio'
         ]
       },
       {
