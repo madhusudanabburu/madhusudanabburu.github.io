@@ -44,6 +44,14 @@ module.exports = {
     ],
     sidebar: [
       {
+        title: 'Introduction',
+        path: '/guide/',
+        collapsable: false,
+        children: [
+          '/guide/intro'
+        ]
+      },
+      {
         title: 'Prerequisites',
         path: '/guide/',
         collapsable: false,
