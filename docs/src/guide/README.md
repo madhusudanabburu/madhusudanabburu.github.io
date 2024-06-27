@@ -2,7 +2,7 @@
 
 Hello Reader, 
 
-Glad that you're here. I've made a honest attempt to document some of the learnings that I have encountered with Machine Learning, Python and Kubeflow skillsets. It's intended at viewers who are beginners **not experts** and helps them setup their workspace and develop datascience based projects using either **Jupyter Notebooks** or **Kubeflow Pipelines**. 
+Glad that you're here. I've made a honest attempt to document some of the learnings that I have encountered with Machine Learning, Python and Kubeflow stack. It's intended at viewers who are beginners **not experts** and helps them setup their workspace and develop Data Science based projects using either **Jupyter Notebooks** or **Kubeflow Pipelines**. 
 
 All of this can be done locally on a laptop? Yes ! Of course, you would need a better performing one - **I use a MacBook M2 Max with 32 GB of Memory and 12C CPU, 30C GPU with 2 TB of storage**.
 
@@ -16,6 +16,6 @@ One more point, this is a static site built using [Vuepress](https://v1.vuepress
 
 **Also, the content or data shown in this site is all examples and doesn't in any way relate to my current/previous employers, clients or customers**
 
-Happy Learning :) Any kind of feedback, email me :  **madhusudan.abburu@gmail.com**
+Happy Learning :) I'll keep adding content when available and for any kind of feedback, email me :  **madhusudan.abburu@gmail.com**
 
 ![Image from images folder](~@source/images/intro/myphoto.jpeg)
