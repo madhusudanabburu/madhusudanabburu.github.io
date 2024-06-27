@@ -1,4 +1,4 @@
-# Introduction
+# Read Me
 
 Hello Reader, 
 
@@ -16,6 +16,6 @@ One more point, this is a static site built using [Vuepress](https://v1.vuepress
 
 **Also, the content or data shown in this site is all examples and doesn't in any way relate to my current/previous employers, clients or customers**
 
-Happy Learning :)
+Happy Learning :) Any kind of feedback, email me :  **madhusudan.abburu@gmail.com**
 
 ![Image from images folder](~@source/images/intro/myphoto.jpeg)
