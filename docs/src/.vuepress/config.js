@@ -58,8 +58,8 @@ module.exports = {
         children: [
           '/guide/prerequisites/',
           '/guide/prerequisites/kubeflow',
-          '/guide/prerequisites/minio'
-        ]
+          '/guide/prerequisites/minio',
+          '/guide/prerequisites/llama3'        ]
       },
       {
         title: 'Jupyter Notebooks',
