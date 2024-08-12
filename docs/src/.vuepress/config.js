@@ -20,7 +20,16 @@ module.exports = {
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
   ],
-
+  markdown: {
+    extendMarkdown: md => {
+      md.use(require('markdown-it-html5-embed'), {
+        html5embed: {
+          useImageSyntax: true,
+          useLinkSyntax: false
+        }
+      })
+    }
+  },
   /**
    * Theme configuration, here is the default theme configuration for VuePress.
    *
@@ -58,8 +67,8 @@ module.exports = {
         children: [
           '/guide/prerequisites/',
           '/guide/prerequisites/kubeflow',
-          '/guide/prerequisites/minio',
-          '/guide/prerequisites/llama3'        ]
+          '/guide/prerequisites/minio'
+       ]
       },
       {
         title: 'Jupyter Notebooks',
@@ -82,11 +91,19 @@ module.exports = {
         ]
       },
       {
-        title: 'Model Deployment',
-        path: '/guide/vertexai/',
+        title: 'Opensource LLMs',
+        path: '/guide/ossllm/',
         collapsable: false,
         children: [
-          '/guide/vertexai/'
+          '/guide/ossllm/llama3' 
+        ]
+      },
+      {
+        title: 'GenAI Applications',
+        path: '/guide/genaiapps/',
+        collapsable: false,
+        children: [
+          '/guide/genaiapps/ragchatbotwithsite'
         ]
       }
     ]
@@ -100,6 +117,15 @@ module.exports = {
       {
         ga: 'G-GNZH16V1S9' // Measurement ID
       }
+    ],
+    ['markdown-it-html5-embed',
+      {
+        attributes: {
+          'audio': 'width="120" controls class="audioplayer"',
+          'video': 'width="120" height="140" class="videoplayer" controls'
+        }
+      }
+
     ]
   ],
 
