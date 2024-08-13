@@ -177,6 +177,38 @@ def should_continue(state):
     return "continue"
 ```
 
+### Graph - assemble the flow between the agent, tool and any other nodes
+
+Below is the declaration of the node graph, the starting point is the agent followed by tool as needed and then loops around depending on the User's requests
+
+```python
+    # Initialize a new graph
+    graph = StateGraph(AgentState)
+
+    # Define the two Nodes we will cycle between
+    graph.add_node("agent", call_model)
+    graph.add_node("action", call_tool)
+
+    # Set the Starting Edge
+    graph.set_entry_point("agent")
+
+    # Set our Contitional Edges
+    graph.add_conditional_edges(
+        "agent",
+        should_continue,
+        {
+            "continue": "action",
+            "end": END,
+        },
+    )
+
+    # Set the Normal Edges
+    graph.add_edge("action", "agent")
+
+    # Compile the workflow
+    agent = graph.compile()
+```
+
 ## Create Chatbot UI
 
 I've used [streamlit](https://streamlit.io/) as my UI framework to build the chat functionality. Its simple, open source and helpful in building interactive data based applications with zero to minimal front end experience
