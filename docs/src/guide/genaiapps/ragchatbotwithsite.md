@@ -279,6 +279,11 @@ This image below depicts the interaction between different nodes of the applicat
 ![Image from images folder](~@source/images/genaiapps/ragsite/rag_agent_langsmith_output.png)
 
 
+## Sources
+
+Available [here](https://github.com/madhusudanabburu/gen-ai-workspace/tree/main/chat-with-website)
+
+Please visit [LangSmith](https://smith.langchain.com/) to generate an API key and assign it to the environment variable **LANGCHAIN_API_KEY** for tracing application calls
 
 
 ## Observations
