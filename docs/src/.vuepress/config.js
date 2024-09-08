@@ -4,7 +4,7 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'Documentation',
+  title: 'Tutorials',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -103,7 +103,8 @@ module.exports = {
         path: '/guide/genaiapps/',
         collapsable: false,
         children: [
-          '/guide/genaiapps/ragchatbotwithsite'
+          '/guide/genaiapps/ragchatbotwithsite',
+          '/guide/genaiapps/ragchatbotwithdocs'
         ]
       }
     ]
