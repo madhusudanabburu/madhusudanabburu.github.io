@@ -268,7 +268,7 @@ I've used [streamlit](https://streamlit.io/) as my UI framework to build the cha
 ## Demo
 
 
-![Demo Video](../../../src/videos/genaiapps/ragsite/rag_agent_demo.mp4?raw=true)
+![Demo Video](https://github.com/madhusudanabburu/madhusudanabburu.github.io/raw/main/docs/src/videos/genaiapps/ragsite/rag_agent_demo.mp4)
 
 Following are some of the screenshots that show the interaction between **agent** and the **tool**
 
