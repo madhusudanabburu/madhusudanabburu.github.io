@@ -202,23 +202,23 @@ def chat_window(file_uploaded):
 ### PDF 
 The following demo video shows the capability of reading, extracting and passing the PDF texts as a context to LLM to chat with it. It does work well except in a few cases where the chapters in a pdf where not identified correctly - possibly the context was missing them as there are 12 chapters in total
 
-![Demo Video](../../../src/videos/genaiapps/ragdocs/chat_with_documents_pdf.mp4?raw=true)
+![Demo Video](https://github.com/madhusudanabburu/madhusudanabburu.github.io/raw/main/docs/src/videos/genaiapps/ragdocs/chat_with_documents_pdf.mp4)
 
 ### MP3
 
 This demo is about the ability to parse an mp3 file that is related to a meeting discussion, The parsed contents are again stored in the in-memory vector store and passed as context to the LLM. The speakers, meeting discussion and the conclusions were correctly retrieved
 
-![Demo Video](../../../src/videos/genaiapps/ragdocs/chat_with_documents_mp3.mp4?raw=true)
+![Demo Video](https://github.com/madhusudanabburu/madhusudanabburu.github.io/raw/main/docs/src/videos/genaiapps/ragdocs/chat_with_documents_mp3.mp4)
 
 Here is the actual mp3 of the discussion
 
-![Demo Audio](../../../src/videos/genaiapps/ragdocs/resources_RC_Conversation_Sample.mp3?raw=true)
+![Demo Audio](../../../src/videos/genaiapps/ragdocs/resources_RC_Conversation_Sample.mp3)
 
 ### Markdown
 
 This demo is about the ability to parse a Markdown (.md) file, extract the contents and pass as context to the LLM to chat with it. It does work really well by identifying critical information but also misses some parts like the inability to identify Negative Reviews that is clearly stated in the uploaded Markdown file
 
-![Demo Video](../../../src/videos/genaiapps/ragdocs/chat_with_documents_md.mp4?raw=true)
+![Demo Video](https://github.com/madhusudanabburu/madhusudanabburu.github.io/raw/main/docs/src/videos/genaiapps/ragdocs/chat_with_documents_md.mp4)
 
 #### Langsmith
 
