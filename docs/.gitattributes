@@ -1,5 +1,2 @@
-*.mp4 filter=lfs diff=lfs merge=lfs -text
-src/videos/genaiapps/ragdocs/*.mp4 filter=lfs diff=lfs merge=lfs -text
-src/videos/genaiapps/ragsite/*.mp4 filter=lfs diff=lfs merge=lfs -text
 docs/src/videos/genaiapps/ragsite/*.mp4 filter=lfs diff=lfs merge=lfs -text
 docs/src/videos/genaiapps/ragdocs/*.mp4 filter=lfs diff=lfs merge=lfs -text
