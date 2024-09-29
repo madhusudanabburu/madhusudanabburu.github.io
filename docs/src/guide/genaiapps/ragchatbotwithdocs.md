@@ -229,9 +229,11 @@ This image below depicts the interaction between the components of the chain con
 
 ## Sources
 
-Available here (TBD)
+Available [here](https://github.com/madhusudanabburu/gen-ai-workspace/tree/main/chat-with-documents)
 
 Please visit [LangSmith](https://smith.langchain.com/) to generate an API key and assign it to the environment variable **LANGCHAIN_API_KEY** for tracing application calls
+
+Please visit [AssemblyAI](https://www.assemblyai.com/app/) to generate an API key and assign it to the environment variable **aai.settings.api_key** for accessing Assembly AI api's / using the **AssemblyAIAudioTranscriptLoader**
 
 
 ## Observations
