@@ -71,7 +71,7 @@ module.exports = {
        ]
       },
       {
-        title: 'Jupyter Notebooks',
+        title: 'Predictive AI - Jupyter Notebooks',
         path: '/guide/notebooks/',
         collapsable: false,
         children: [
@@ -81,7 +81,7 @@ module.exports = {
         ]      
       },
       {
-        title: 'Kubeflow Pipelines',
+        title: 'Predictive AI - Kubeflow Pipelines',
         path: '/guide/pipelines/',
         collapsable: false,
         children: [
@@ -99,7 +99,7 @@ module.exports = {
         ]
       },
       {
-        title: 'GenAI Applications',
+        title: 'Generative AI - Applications',
         path: '/guide/genaiapps/',
         collapsable: false,
         children: [

@@ -1,6 +1,6 @@
-# Llama 3
+# Llama 3.1
 
-Meta's Llama 3 is the most capable openly available LLM (large language model) that can be run locally for inference. I've tried to download the model using HuggingFace repository and convert that to GGUF format to enable it in Ollama for running it locally. The same model can be used to build other applications like Chatbot, Agents, applications that use LLM for other purposes like language translation etc
+Meta's Llama 3.1 is the most capable openly available LLM (large language model) that can be run locally for inference. I've tried to download the model using HuggingFace repository and convert that to GGUF format to enable it in Ollama for running it locally. The same model can be used to build other applications like Chatbot, Agents, applications that use LLM for other purposes like language translation etc
 
 ## Install Prerequisites
 
@@ -38,7 +38,7 @@ This step marks the completion of installation and shows how to run the Ollama a
 
 Alternately, you can also install Ollama using **brew**
 
-## Download Llama3 LLMs
+## Download Llama3.1 LLMs
 
 ### Option 1 - Meta Repo
 
@@ -66,7 +66,7 @@ The first set of steps is to enter the presigned url and also select the model t
 
 ![Image from images folder](~@source/images/llama3/llama_download_1.png)
 
-Once the process runs for sometime, it should download the models like below - I've downloaded the following
+Once the process runs for sometime, it should download the models like below - I've downloaded the following **Llama-3.1**
 - Meta-Llama-3-8B
 - Meta-Llama-3-8B-Instruct
 - Meta-Llama-3-70B
@@ -100,7 +100,7 @@ The above command should download the model like below
 
 ![Image from images folder](~@source/images/llama3/llama_huggingface_download.png)
 
-## Test Llama 3 LLM
+## Test Llama 3.1 LLM
 
 Let's take the Llama 3 model downloaded from HuggingFace and use it for our testing. Before we start our local inference using the model, we may need to convert the model 
 
