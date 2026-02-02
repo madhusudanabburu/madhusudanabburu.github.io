@@ -47,7 +47,6 @@ jobs:
         with:
           languages: ${{ matrix.language }}
           queries: +security-and-quality
-          source-root: ${{ github.workspace }}/docs
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v3
