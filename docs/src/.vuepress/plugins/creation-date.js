@@ -1,4 +1,4 @@
-const fs = require('fs');
+const { execSync } = require('child_process');
 
 module.exports = (options = {}, context) => ({
   extendPageData($page) {
@@ -6,15 +6,27 @@ module.exports = (options = {}, context) => ({
     if (!_filePath) return;
 
     try {
-      // _filePath is already an absolute path, use it directly
-      const stats = fs.statSync(_filePath);
+      // Get the first commit date for this file from git
+      const gitDate = execSync(
+        `git log --follow --format=%aI --reverse -- "${_filePath}" | head -1`,
+        { encoding: 'utf-8', cwd: process.cwd() }
+      ).trim();
       
-      $page.createdTime = stats.birthtime.getTime();
-      $page.createdDate = stats.birthtime.toISOString();
-      
-      console.log('✓ Set date for:', _filePath, '→', stats.birthtime);
+      if (gitDate) {
+        const creationDate = new Date(gitDate);
+        $page.createdTime = creationDate.getTime();
+        $page.createdDate = creationDate.toISOString();
+      }
     } catch (error) {
-      console.error('✗ Error for:', _filePath, error.message);
+      // Fallback to filesystem date (for local dev)
+      try {
+        const fs = require('fs');
+        const stats = fs.statSync(_filePath);
+        $page.createdTime = stats.birthtime.getTime();
+        $page.createdDate = stats.birthtime.toISOString();
+      } catch (e) {
+        // Silent fail
+      }
     }
   }
 });
