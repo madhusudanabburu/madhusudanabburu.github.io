@@ -47,12 +47,12 @@ jobs:
         with:
           languages: ${{ matrix.language }}
           queries: +security-and-quality
-          source-root: docs
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v3
         with:
           category: "/language:${{ matrix.language }}"
+          checkout_path: docs
 
   # Build job
   build:
