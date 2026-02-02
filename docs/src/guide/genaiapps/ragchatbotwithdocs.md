@@ -245,3 +245,6 @@ Based on the demo videos shown above, the following are my observations
 - Langsmith is a powerful tool, it helps in monitoring and debugging applications with multiple nodes and is a must have for applications written in Langgraph
 - The RAG based approach is a viable option to consider in closed environments where the model doesn't need to be trained but has the capability to **retrieve** from a context there by **augmenting** its **generation** capabilities 
 - The **create_stuff_documents_chain** and the **create_retrieval_chain** are simpler methods to create an agent for question-answering capabilities
+
+
+<PageMeta />

@@ -1127,3 +1127,5 @@ print('True Label', np.argmax(y_test[25]))
 ## Observations
 As seen above, the first model performed really well but the tuned model didn't meet the expectations, may be the tuning parameters were incorrect and needs further iterations to improve 
 
+
+<PageMeta />

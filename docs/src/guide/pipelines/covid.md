@@ -132,3 +132,6 @@ As you can see above, the tuned model has done a good job and has made 4 correct
 This pipeline does perform the basic functionalities like load data, pre processing it, training and validating the models. One important consideration that I would need to make is to understand how to add metadata to keras models 
 
 Next step would be download this tuned model and upload it to Google Vertex AI and expose endpoints to see if it can be used for prediction using a sample Web Application
+
+
+<PageMeta />

@@ -165,3 +165,6 @@ The above method helps in continuous deployment but we will also need to build a
 ## Observations
 
 This is a pipeline that does every functionality like Data ingestion, cleansing, analysis, training and validating the models. One important consideration is the data is shared between components using volume (or shared folders) as shown in the above image using folder icons. A better option would be to use a database instead of having them as files to ensure that other pipelines can also use the data as needed
+
+
+<PageMeta />

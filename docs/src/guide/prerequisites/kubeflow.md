@@ -210,3 +210,5 @@ I was put on the kubeflow-user-example-com namespace by default
 Also, the Jupyter Notebook requires worker nodes to be setup as its launched as a separate pod
 - Our kind cluster configuration takes care of this requirement by adding 2 worker nodes 
 :::
+
+<PageMeta />

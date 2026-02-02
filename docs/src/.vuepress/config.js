@@ -104,7 +104,8 @@ module.exports = {
         collapsable: false,
         children: [
           '/guide/genaiapps/ragchatbotwithsite',
-          '/guide/genaiapps/ragchatbotwithdocs'
+          '/guide/genaiapps/ragchatbotwithdocs',
+          '/guide/genaiapps/aiagent'
         ]
       }
     ]
@@ -127,7 +128,8 @@ module.exports = {
         }
       }
 
-    ]
+    ],
+    [require('./plugins/creation-date.js')] 
   ],
 
   head: [

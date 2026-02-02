@@ -1674,6 +1674,5 @@ plt.show()
     - Overweight women have a higher risk of diabetes. They should keep the glucose level in check and exercise regularly. 
 
 
-```python
 
-```
+<PageMeta />

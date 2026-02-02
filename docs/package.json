@@ -15,11 +15,10 @@
   "license": "MIT",
   "devDependencies": {
     "@vuepress/plugin-google-analytics": "^1.9.10",
-    "vuepress": "^1.5.3"
+    "vuepress": "^1.9.10"
   },
   "dependencies": {
     "@vuepress/plugin-google-analytics": "^1.9.10",
-    "markdown-it-html5-embed": "^1.0.0",
-    "vuepress": "^1.5.3"
+    "markdown-it-html5-embed": "^1.0.0"
   }
 }

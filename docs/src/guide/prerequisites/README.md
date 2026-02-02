@@ -127,4 +127,4 @@ Once you enter this token in the login page, you should be able to view the Dash
 
 As you can see, its a blank cluster with no containers etc but atleast a honest attempt at launching the dashboard on a laptop
 
-
+<PageMeta />

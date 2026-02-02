@@ -296,3 +296,6 @@ Based on the demo video shown above, the following are my observations
 - The agent/model does throw some errors at times as shown below but it still is able to continue answering the user's queries
     - ValueError: Failed to parse a response from local_Meta_Llama_LLM_8B output: {}
 - The RAG based approach is a viable option to consider in closed environments where the model doesn't need to be trained but has the capability to **retrieve** from a tool there by **augmenting** its **generation** capabilities 
+
+
+<PageMeta />
